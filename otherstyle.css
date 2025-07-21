@@ -1,0 +1,316 @@
+*{
+    box-sizing: border-box;
+    /* so that there is no space at the top */
+    margin: 0; 
+    padding: 0;
+}
+
+body{
+    background-color: black;
+}
+
+.main{
+    background-image: url("assets/background.png");
+    height: 70vh;
+    background-size: cover;
+    position: relative;
+    background-position: center center;
+}
+
+.main .box{
+    height: 70vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    max-width: 60vw;
+    margin: auto;
+    justify-content: space-between;
+    height: 70px;
+}
+
+nav img{
+    height: 130px;
+    position: relative;
+    z-index: 20;
+}
+
+nav button{
+   position: relative;
+    z-index: 20; 
+}
+
+div .hero{
+    height: calc(100% - 70px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    gap: 17px; /* flexbox prop */
+    padding: 0 23px;
+    text-align: center;
+
+}
+
+div .hero> :first-child{ /*immediate first child */
+    font-size: 48px;
+    font-weight: 900;
+}
+
+div .hero> :nth-child(2){
+    font-weight: 400;
+    font-size: 24px;
+
+}
+
+div .hero input{
+    background-color: black;
+    opacity: 0.7;
+    border: 1px solid grey;
+    border-radius: 2px;
+    height: 40px;
+    width: 250px;
+    font-weight: 800;
+    color: white;
+    padding-left: 10px;
+    position: relative;
+    
+}
+
+div .hero button{
+    height: 40px;
+    width: 125px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 2px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+div .separation{
+    height: 6px;
+    background-color: rgb(49, 47, 47);
+}
+
+nav div #signin{
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    height: 27px;
+    width: 70px;
+    padding: 3px 8px;
+    font-weight: bold;
+}
+
+nav div #eng{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    height: 27px;
+    width: 70px;
+    padding: 3px 8px;
+    border: 1px solid white;
+    border-radius: 2px;
+    opacity: 1;
+}
+
+section .tvimg{
+    position: relative;
+}
+
+section :nth-child(2) img{
+    width: 30vw;
+    position: relative;
+    
+}
+
+section :nth-child(2) video{
+    position: absolute;
+    left: 45px;
+    top: 75px;
+    width: 23vw;
+}
+
+.first{
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+    max-width: 70vw;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.text1{
+    font-weight: bolder;
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+}
+
+.text2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.second .media img{
+    border: none;
+    border-radius: 10%;
+    height: 400px;
+}
+
+.second{
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+    max-width: 60vw;
+}
+
+.second .text{
+    padding-left: 100px;
+}
+
+.fourth {
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+    max-width: 75vw;
+
+}
+
+.fourth .media img{
+    height: 400px;
+}
+
+.fourth .text{
+    padding-left: 100px;
+}
+
+.fifth{
+    height: 400px;
+}
+
+.fifth .faq{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+.fifth .qs{
+    background-color: rgb(49, 47, 47);
+    margin-top: 10px ;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    width: 60vw;
+    height: 40px;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.fifth .ques{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fifth .ques img{
+    height: 100px;
+    position: absolute;
+}
+
+.fifth .ques :nth-child(2) {
+    position: absolute;
+    margin-left: 75vw;
+    top:15px;
+}
+
+.fifth .ques :nth-child(4) {
+    position: absolute;
+    margin-left: 75vw;
+    top:65px;
+}
+
+.fifth .ques :nth-child(6) {
+    position: absolute;
+    margin-left: 75vw;
+    top:115px;
+}
+
+.fifth .ques :nth-child(8) {
+    position: absolute;
+    margin-left: 75vw;
+    top:165px;
+}
+
+.fifth .ques :nth-child(10) {
+    position: absolute;
+    margin-left: 75vw;
+    top:215px;
+}
+
+.fifth .qs:hover{
+    background-color: red;
+}
+
+footer{
+    color: rgb(165, 162, 162);
+    position: relative;
+    height: 500px;
+    
+}
+
+.footer{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 60vw;
+    margin: auto;
+    
+    position: relative;
+    top: 70px;
+}
+
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+    
+}
+
+footer span{
+    position: relative;
+    margin-left: 19vw;
+    text-align: center;
+    top: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+.footer-item a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(165, 162, 162);
+}
+
+
+
+
