@@ -10,7 +10,7 @@ body{
 }
 
 .main{
-    background-image: url("background.png");
+    background-image: url('background.png');
     height: 70vh;
     background-size: cover;
     position: relative;
